@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<%include public/header.ejs%>
+	ejs 循环数据
+	<ul>
+		<%for(let i = 0;i < arr.length;i++){%>
+		<li><%=arr[i]%> ------<%=userInfo%></li>
+		<%}%>
+	</ul>
+<!-- <%-%>  里面的-  是为了转译标签-->
+<%-content%>
+</body>
+</html>
